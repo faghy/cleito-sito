@@ -12,3 +12,13 @@
  Tags: one-column, custom-menu, featured-images, theme-options, translation-ready
  GitHub Theme URI: understrap/understrap-child
 */
+
+header#wrapper-navbar {
+    background-color: black;
+}
+
+
+
+hr.hr-is-style-default {
+    background-image: -webkit-linear-gradient(0deg, transparent, var(--yellow), var(--red), var(--pink), var(--purple), var(--blue), transparent);
+}
