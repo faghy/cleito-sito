@@ -90,7 +90,7 @@ add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_co
 
 
 
-// ***** Allow SVG  *****
+// ********** Allow SVG  *************
 
 add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mimes) {
 
@@ -124,3 +124,17 @@ function fix_svg() {
         </style>';
 }
 add_action( 'admin_head', 'fix_svg' );
+
+
+// **************** editor gutenberg personalizzato nel backend  *****************
+
+function add_custom_font() {
+//	$url = get_settings('siteurl');
+	$url = 'https://cleito.it/wp-content/themes/understrap-child-main/style.css';
+	/*echo '<!-- custom admin css -->
+          <link rel="stylesheet" type="text/css" href="' . $url . '" />
+          <!-- /end custom adming css -->';*/
+	wp_register_style('Hellix', $url);
+	wp_enqueue_style('Hellix');
+}
+add_action('wp_print_styles', 'add_custom_font');

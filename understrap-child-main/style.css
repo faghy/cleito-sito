@@ -13,12 +13,40 @@
  GitHub Theme URI: understrap/understrap-child
 */
 
-header#wrapper-navbar {
-    background-color: black;
+@font-face {
+    font-family: Hellix;
+    src: url(https://cleito.it/wp-content/themes/understrap-child-main/fonts/Hellix-Bold.woff);
+    font-weight: normal;
+}
+
+/* **************** editor gutenberg personalizzato nel backend  ***************** */
+.block-editor-default-block-appender textarea.block-editor-default-block-appender__content, div.editor-styles-wrapper, div.editor-styles-wrapper button, div.editor-styles-wrapper input, div.editor-styles-wrapper select, div.editor-styles-wrapper textarea {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 18px;
+}
+
+
+h2 {
+    font-family: "Hellix";
+    line-height: 70px;
+}
+
+nav#main-nav {
+    background-color: black !important;
+    color: #828283 !important;
+}
+
+a.navbar-brand {
+    color: #828283 !important;
+}
+ul#main-menu {
+    color: #828283 !important;
 }
 
 
 
+/*
 hr.hr-is-style-default {
     background-image: -webkit-linear-gradient(0deg, transparent, var(--yellow), var(--red), var(--pink), var(--purple), var(--blue), transparent);
-}
+}*/
