@@ -29,20 +29,37 @@
 
 h2 {
     font-family: "Hellix";
-    line-height: 70px;
+    line-height: 85px;
+}
+h2.h2-consegna-vendita-smaltimento {
+    margin: 0;
+    background-color: #24272a;
+    border-radius: 50px;
+}
+h2.h2-consegna-vendita-smaltimento strong {
+    color: #ff034a;
+}
+h2.h2-consegna-vendita-smaltimento em {
+    color: #ffa844;
 }
 
 nav#main-nav {
     background-color: black !important;
-    color: #828283 !important;
+}
+
+a.nav-link {
+    color: #949494;
+    font-size: 26px;
 }
 
 a.navbar-brand {
     color: #828283 !important;
 }
-ul#main-menu {
-    color: #828283 !important;
+
+div.div-consegna-vendita-smaltimento {
+    border-radius: 130px 130px 50px 50px;
 }
+
 
 
 

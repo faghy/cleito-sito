@@ -128,6 +128,17 @@ add_action( 'admin_head', 'fix_svg' );
 
 // **************** editor gutenberg personalizzato nel backend  *****************
 
+function customAdmin() {
+	$url = get_settings('siteurl');
+	$url = $url . '/wp-content/themes/understrap-child-main/style.css';
+	echo '<!-- custom admin css -->
+          <link rel="stylesheet" type="text/css" href="' . $url . '" />
+          <!-- /end custom adming css -->';
+}
+add_action('admin_head', 'customAdmin');
+
+// **************** custom fonts  *****************
+
 function add_custom_font() {
 //	$url = get_settings('siteurl');
 	$url = 'https://cleito.it/wp-content/themes/understrap-child-main/style.css';
