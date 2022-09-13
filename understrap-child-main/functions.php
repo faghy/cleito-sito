@@ -37,7 +37,7 @@ function theme_enqueue_styles() {
 	$theme_styles  = "/css/child-theme{$suffix}.css";
 	$theme_scripts = "/js/child-theme{$suffix}.js";
 
-	wp_enqueue_style( 'child-understrap-styles', get_stylesheet_directory_uri() . $theme_styles, array(), $the_theme->get( 'Version' ) );
+	wp_enqueue_style( 'child-understrap-styles', get_stylesheet_directory_uri() . $theme_styles, array(), microtime() /*$the_theme->get( 'Version' )*/ );
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'child-understrap-scripts', get_stylesheet_directory_uri() . $theme_scripts, array(), $the_theme->get( 'Version' ), true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -149,3 +149,5 @@ function add_custom_font() {
 	wp_enqueue_style('Hellix');
 }
 add_action('wp_print_styles', 'add_custom_font');
+
+

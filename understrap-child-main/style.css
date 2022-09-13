@@ -26,6 +26,46 @@
     font-size: 18px;
 }
 
+/* **************** menu ***************** */
+
+nav#main-nav {
+   /* background-color: black !important;*/
+    background:#ffff;
+    height:70px;
+    z-index:999;
+    margin:0 auto;
+    border-bottom:1px solid #dadada;/etc/sw/keys/
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+}
+
+a.nav-link {
+    color: #949494;
+    font-size: 26px;
+}
+
+a.navbar-brand {
+    color: #828283 !important;
+}
+
+nav {
+    background:#ffff;
+    height:70px;
+    z-index:999;
+    margin:0 auto;
+    border-bottom:1px solid #dadada;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+
+}
+
+/* **************** page ***************** */
 
 h2 {
     font-family: "Hellix";
@@ -43,18 +83,7 @@ h2.h2-consegna-vendita-smaltimento em {
     color: #ffa844;
 }
 
-nav#main-nav {
-    background-color: black !important;
-}
 
-a.nav-link {
-    color: #949494;
-    font-size: 26px;
-}
-
-a.navbar-brand {
-    color: #828283 !important;
-}
 
 div.div-consegna-vendita-smaltimento {
     border-radius: 130px 130px 50px 50px;
