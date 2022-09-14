@@ -13,16 +13,11 @@ defined( 'ABSPATH' ) || exit;
 
 
 
-		<?php /* if (is_front_page() || is_home()) {
-			echo "<header class='entry-header' style='display: none;'>";
-			the_title( '<h1 class="entry-title">', '</h1>' );
-			echo "</header>";
-		} else {
-			echo "<header class='entry-header'>";
-			the_title( '<h1 class="entry-title">', '</h1>' );
-			echo "</header>";
-		}
-		*/?>
+		<?php
+            echo "<header class='entry-header' style='display: none;'>";
+            the_title( '<h1 class="entry-title">', '</h1>' );
+            echo "</header>";
+		?>
 
 	<!-- .entry-header -->
 
