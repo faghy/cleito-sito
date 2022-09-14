@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || exit;
 
 
 
-		<?php if (is_front_page() || is_home()) {
+		<?php /* if (is_front_page() || is_home()) {
 			echo "<header class='entry-header' style='display: none;'>";
 			the_title( '<h1 class="entry-title">', '</h1>' );
 			echo "</header>";
@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) || exit;
 			the_title( '<h1 class="entry-title">', '</h1>' );
 			echo "</header>";
 		}
-		?>
+		*/?>
 
 	<!-- .entry-header -->
 

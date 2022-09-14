@@ -26,7 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<footer class="site-footer" id="colophon">
 
 					<div class="site-info" style="text-align: center">
-                        <img style="text-align: center;" src="wp-content//themes/understrap-child-main/img/dueclic-azzurro.png" width="140">
+                        <img style="text-align: center;" src="/wp-content/themes/understrap-child-main/img/dueclic-azzurro.png" width="140">
 
 						<h2 style="text-align: center; color: #828283;">@Cleito è un software sviluppato da
                             <a style="color: #5382b1;" target="_blank" href="https://dueclic.com">dueclic</a>

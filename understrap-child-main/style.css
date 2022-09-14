@@ -30,11 +30,10 @@
 
 nav#main-nav {
    /* background-color: black !important;*/
-    background:#ffff;
-    height:70px;
+    background:#000000;
+    height:100px;
     z-index:999;
     margin:0 auto;
-    border-bottom:1px solid #dadada;/etc/sw/keys/
     width:100%;
     position:fixed;
     top:0;
@@ -51,21 +50,12 @@ a.navbar-brand {
     color: #828283 !important;
 }
 
-nav {
-    background:#ffff;
-    height:70px;
-    z-index:999;
-    margin:0 auto;
-    border-bottom:1px solid #dadada;
-    width:100%;
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-
-}
 
 /* **************** page ***************** */
+
+main {
+    margin-top: 90px;
+}
 
 h2 {
     font-family: "Hellix";
