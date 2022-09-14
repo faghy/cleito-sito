@@ -29,8 +29,9 @@
 /* **************** menu ***************** */
 
 nav#main-nav {
-   /* background-color: black !important;*/
-    background:#080f24;
+   /* background-color: #212121 !important;*/
+
+    background:#000000;
     height:100px;
     z-index:999;
     margin:0 auto;
@@ -78,7 +79,10 @@ div.div-consegna-vendita-smaltimento {
     border-radius: 130px 130px 50px 50px;
 }
 
-
+.box-vendita-details {
+    padding: 4%;
+    border-radius: 20px;
+}
 
 
 /*

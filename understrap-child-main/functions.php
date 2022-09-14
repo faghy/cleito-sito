@@ -150,4 +150,13 @@ function add_custom_font() {
 }
 add_action('wp_print_styles', 'add_custom_font');
 
+//****** javascript personalizzato *********//
+
+add_action('wp_enqueue_scripts', function(){
+	/*wp_enqueue_script('currentDevice',
+		get_stylesheet_directory_uri().'/js/current-device.min.js',
+		array(), '','true');*/
+	wp_enqueue_script('custom.js',get_stylesheet_directory_uri().'/js/custom.js', array(), '','true');
+}, 9999);
+
 
