@@ -58,6 +58,16 @@ main {
     margin-top: 90px;
 }
 
+a {
+    text-decoration: none !important;
+}
+/*
+h2.link-bg-hoover:hover {
+
+    background: linear-gradient(90deg, rgba(79,70,229,0.2) 0%, rgba(255,168,68,0.2) 33%, rgba(255,3,74,0.2) 66%, rgba(184,74,235,0.2) 100%);
+}*/
+
+
 h2 {
     font-family: "Hellix";
     line-height: 85px;
@@ -81,6 +91,10 @@ div.div-consegna-vendita-smaltimento {
 
 .box-vendita-details {
     padding: 4%;
+    border-radius: 20px;
+}
+
+ul.has-background {
     border-radius: 20px;
 }
 

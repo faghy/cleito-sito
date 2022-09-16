@@ -1,53 +1,60 @@
-let nav = document.getElementById('main-nav');
-let position = nav.offsetTop;
-let scrolled = document.scrollingElement.scrollTop;
-
-window.addEventListener('scroll',(event) => {
-   /* console.log(nav);
-    nav.style.backgroundColor ="#212121FF";
-    unfade(nav);*/
-});
+/*let nav = document.getElementById('main-nav');
+//let position = nav.offsetTop;
+//let scrolled = document.scrollingElement.scrollTop;
 
 function fade(element) {
+    let op = 1;  // initial opacity
+    let timer = setInterval(function () {
+         if (op >= 10){
+             clearInterval(timer);
+         }
+        element.style.opacity = op/10;
+        console.log(op)
+        // element.style.filter = 'alpha(opacity=' + op + ")";
+         op++;
+
+     }, 50);
+    nav.style.backgroundColor = "red";
+}
+
+/*
+for (let i=1; i<=10; i++) {
+    element.style.opacity = i/10;
+    console.log(op)
+}*/
+
+
+/*
+function unfade(element) {
     var op = 1;  // initial opacity
+    element.style.display = 'inherit';
     var timer = setInterval(function () {
         if (op <= 0.1){
             clearInterval(timer);
-            element.style.display = 'none';
         }
         element.style.opacity = op;
-        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-        op -= op * 0.1;
-    }, 50);
-}
-
-function unfade(element) {
-    var op = 0.1;  // initial opacity
-    element.style.display = 'block';
-    var timer = setInterval(function () {
-        if (op >= 1){
-            clearInterval(timer);
-        }
-        element.style.opacity = op;
-        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-        op += op * 0.1;
+        element.style.filter = 'alpha(opacity=' + op + ")";
+        op = op - 0.1;
     }, 10);
 }
+*/
+/*
 
-
-
-//const content = document.getElementById("content");
 document.addEventListener("scroll", (e) => {
     let scrolled = document.scrollingElement.scrollTop;
     let position = nav.offsetTop;
 
-    if(scrolled > position + 200){
+    if(scrolled > position + 100){
       //  nav.classList.add('curtain-in');
+        nav.style.opacity = 0.1;
 
-        nav.style.backgroundColor = "#080f24";
+        fade(nav);
+
     }
-    if(scrolled < position + 200){
+  /*  if(scrolled < position + 100){
         //  nav.classList.add('curtain-in');
+        unfade(nav);
         nav.style.backgroundColor = "#000000";
+        nav.style.opacity = 1;
     }
-});
+});*/
