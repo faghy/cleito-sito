@@ -13,12 +13,23 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <nav id="main-nav" class="navbar navbar-expand-md" aria-labelledby="main-nav-label">
 
+    <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"blue","textColor":"red","width":500,"style":{"typography":{"fontSize":"33px"},"border":{"radius":"20px"}}} -->
+        <div class="wp-block-button has-custom-width wp-block-button__width-100 has-custom-font-size"
+             style="font-size:33px; font-weight: bold;">
+            <a href="/demo"
+               class="wp-block-button__link has-white-color has-blue-background-color has-text-color has-background"
+               style="border-radius:20px">Provalo subito</a></div>
+        <!-- /wp:button --></div>
+    <!-- /wp:buttons --></div>
+
 	<h2 id="main-nav-label" class="screen-reader-text">
 		<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
 	</h2>
 
 
 	<div class="<?php echo esc_attr( $container ); ?>">
+
+
 
 		<!-- Your site title as branding in the menu -->
 		<?php /*if ( ! has_custom_logo() ) { */?><!--
