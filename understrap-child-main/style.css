@@ -30,7 +30,7 @@
 
 nav#main-nav {
   /*  background-color: #212121 !important;*/
-
+/*
     background:#000000;
     height:100px;
     z-index:999;
@@ -39,7 +39,7 @@ nav#main-nav {
     position:fixed;
     top:0;
     left:0;
-    right:0;
+    right:0;*/
     border-bottom: solid 2px linear-gradient(90deg, rgba(79,70,229,0.2) 0%, rgba(255,168,68,0.2) 33%, rgba(255,3,74,0.2) 66%, rgba(184,74,235,0.2) 100%);
 }
 
@@ -85,9 +85,16 @@ h2.h2-consegna-vendita-smaltimento em {
     color: #ffa844;
 }
 
+h2.h2-titolo-primario a {
+    color: #ffffff;
+}
 
 div.div-consegna-vendita-smaltimento {
     border-radius: 130px 130px 50px 50px;
+}
+
+.is-style-fill a:hover {
+    background-color: #4f46e5 !important; ;
 }
 
 .box-vendita-details {
@@ -98,6 +105,10 @@ div.div-consegna-vendita-smaltimento {
 ul.has-background {
     border-radius: 20px;
 }
+/*
+div.provalo-solo-mobile {
+    display: none !important;
+}*/
 
 
 /*
@@ -144,4 +155,45 @@ span.wpcf7-spinner {
 input.wpcf7-submit:hover {
     background-color: #4f46e5 !important;
     color: #ffffff !important;
+}
+
+
+/* ********************************************************** MOBILE *********************************************************** */
+
+@media only screen and (max-width: 600px) {
+    button#navbar-toggler span {
+        color: #949494 !important;
+    }
+    h2.h2-titolo-primario {
+        font-size: 35px !important;
+        line-height: 35px;
+    }
+    h2.h2-consegna-vendita-smaltimento {
+        font-size: 32px!important;
+        line-height: 35px;
+    }
+    .elenco-consegna-vendita-smaltimento {
+        font-size: 24px!important;
+    }
+    .is-style-fill {
+        font-size: 24px!important;
+    }
+
+    div.wp-block-button {
+        width: 100% !important;
+    }
+
+    div.sepratore-solo-desktop {
+        display: none;
+    }
+    div.wp-block-columns {
+       margin-bottom: 0px;
+    }
+    p.paragrafo-desktop {
+        font-size: 20px !important;
+    }
+
+    #h2-footer {
+        font-size: 18px;
+    }
 }
