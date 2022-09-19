@@ -1,4 +1,16 @@
-/*let nav = document.getElementById('main-nav');
+/*jQuery('.zoom').click(function() {
+
+    var imageUrl = $(this).attr('src');
+    var imageHeight = $(this).prop('naturalHeight');
+    var windowHeight = $(window).height();
+
+    if (imageHeight > windowHeight) {
+        var optionalProperty = '; background-size: contain';
+    } else {
+        var optionalProperty = '';
+    }
+}
+let nav = document.getElementById('main-nav');
 //let position = nav.offsetTop;
 //let scrolled = document.scrollingElement.scrollTop;
 
