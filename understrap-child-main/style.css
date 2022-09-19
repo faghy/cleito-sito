@@ -61,6 +61,7 @@ main {
 
 a {
     text-decoration: none !important;
+    color: #ffffff !important;
 }
 /*
 h2.link-bg-hoover:hover {
@@ -92,9 +93,22 @@ h2.h2-titolo-primario a {
 div.div-consegna-vendita-smaltimento {
     border-radius: 130px 130px 50px 50px;
 }
-
+.pulsante-vendita-consegna-smaltimento {
+    max-width: 250px;
+    padding: 3px;
+    position: relative;
+    background: linear-gradient(90deg, rgba(79,70,229,1) 0%, rgba(255,168,68,1) 33%, rgba(255,3,74,1) 66%, rgba(184,74,235,1) 100%);
+    border-radius: 50px;
+   /* border-image: solid 1px linear-gradient(90deg, rgba(79,70,229,1) 0%, rgba(255,168,68,1) 33%, rgba(255,3,74,1) 66%, rgba(184,74,235,1) 100%) !important;
+    /*border-image-slice: solid 1px linear-gradient(90deg, rgba(79,70,229,1) 0%, rgba(255,168,68,1) 33%, rgba(255,3,74,1) 66%, rgba(184,74,235,1) 100%) !important;
+*/
+}
 .is-style-fill a:hover {
-    background-color: #4f46e5 !important; ;
+    background-color: #ffffff !important;
+
+    border: none !important;
+    background: none !important;
+
 }
 
 .box-vendita-details {
@@ -161,9 +175,14 @@ input.wpcf7-submit:hover {
 /* ********************************************************** MOBILE *********************************************************** */
 
 @media only screen and (max-width: 600px) {
+/*
     button#navbar-toggler span {
         color: #949494 !important;
     }
+    #navbarNavDropdown {
+        color: #949494 !important;
+        background: #ffffff;
+    }*/
     h2.h2-titolo-primario {
         font-size: 35px !important;
         line-height: 35px;
@@ -176,7 +195,7 @@ input.wpcf7-submit:hover {
         font-size: 24px!important;
     }
     .is-style-fill {
-        font-size: 24px!important;
+        font-size: 20px!important;
     }
 
     div.wp-block-button {
