@@ -30,18 +30,18 @@
     top: 0;
     bottom: 0;
     right: 0;
-    background: #fff;
+    background: #4f46e5;
     padding: 25px;
     z-index: 99999;
     zoom: .85;
- /*   transform: scale(0.85);
-    transform-origin: 0 0;
-    /*opacity: .9;*/
+    /*transform: scale(1);
+    transform-origin: 0 0;*/
+    opacity: .85;
     cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAAAp0lEQVRIie2VTQqAIBSE52BBP7evbS47QJ6iNgpio8/8oYgGXEg633ukDvBFrQD6Sl698buoA7ADmAoB1meMVaDBO9qEubSfVuJ3dAhzsQMG0h4oBrHrkwEhUAjCCsoGMUgxwGowRgyizffbUsaADR/ChsqB/orqkX/S5HS5an5Pmt/4nLfrVkyUvsIiKJYHftKx5BPzJDlwBFkfeurmCgAXtFTyepFOkXBc+2M5ykQAAAAASUVORK5CYII="), pointer;
 }
 
 .zoomOpen > div {
-    background-color: #fff;
+    background-color: #171d23;
     background-repeat: no-repeat;
     background-position: center center;
     height: 100%;
@@ -68,13 +68,18 @@ nav#main-nav {
     position:fixed;
     top:0;
     left:0;
-    right:0;*/
+    right:0;
     border-bottom: solid 2px linear-gradient(90deg, rgba(79,70,229,0.2) 0%, rgba(255,168,68,0.2) 33%, rgba(255,3,74,0.2) 66%, rgba(184,74,235,0.2) 100%);
+*/}
+
+nav#main-nav div.container {
+    padding-right: 15px;
+    margin-right: 15px;
 }
 
 a.nav-link {
     color: #949494;
-    font-size: 26px;
+    font-size: 24px;
 }
 
 a.navbar-brand {
@@ -195,6 +200,11 @@ input.wpcf7-submit {
 span.wpcf7-spinner {
     display: none !important;
 }
+span.wpcf7-list-item-label {
+    position: relative;
+    bottom: 20px;
+}
+
 input.wpcf7-submit:hover {
     background-color: #4f46e5 !important;
     color: #ffffff !important;

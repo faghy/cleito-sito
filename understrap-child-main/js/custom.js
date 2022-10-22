@@ -5,32 +5,34 @@ jQuery('.zoom').click(function() {
     let imageHeight = jQuery(this).prop('naturalHeight');
     let windowHeight = jQuery(window).height();
 
-    if (imageHeight > windowHeight) {
+    if (imageHeight < windowHeight) {
         var optionalProperty = '; background-size: contain';
     } else {
         var optionalProperty = '';
     }
 
-    jQuery('body').prepend('<div class="zoomOpen"><div style="background-image: url(' + imageUrl + ')' + optionalProperty + '"></div></div>');
+    jQuery('body').prepend('<div class="zoomOpen">' +
+        '<div style="background-image: url(' + imageUrl + ')' + optionalProperty + '"></div></div>');
     jQuery('html').css('overflow', 'hidden')
 
-
-})
-
-jQuery('.zoomOpen').animate({
-    opacity: 1,
-    zoom: 1
-}, 100, function() {
-    jQuery(this).click(function() {
-        jQuery(this).animate({
-            opacity: 0,
-            zoom: .85
-        }, 250, function() {
-            jQuery(this).remove();
-            jQuery('html').css('overflow', 'auto');
+    jQuery('.zoomOpen').animate({
+        opacity: 1,
+        zoom: 1
+    }, 100, function() {
+        jQuery(this).click(function() {
+            jQuery(this).animate({
+                opacity: 0,
+                zoom: .85
+            }, 400, function() {
+                jQuery(this).remove();
+                jQuery('html').css('overflow', 'auto');
+            })
         })
     })
+
 })
+
+
 
 /*
 let nav = document.getElementById('main-nav');
