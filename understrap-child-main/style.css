@@ -58,9 +58,8 @@
 /* **************** menu ***************** */
 
 nav#main-nav {
-  /*  background-color: #212121 !important;*/
-/*
-    background:#000000;
+   background-color: whitesmoke !important;
+  /*  background:#000000;
     height:100px;
     z-index:999;
     margin:0 auto;

@@ -8,8 +8,6 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-
-
 /**
  * Removes the parent themes stylesheet and scripts from inc/enqueue.php
  */
@@ -45,7 +43,6 @@ function theme_enqueue_styles() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
-
 
 
 /**

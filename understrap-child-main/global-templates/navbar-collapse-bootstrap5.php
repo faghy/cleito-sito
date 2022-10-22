@@ -13,16 +13,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <nav id="main-nav" class="navbar navbar-expand-md" aria-labelledby="main-nav-label">
 
-    <?php   if (!wp_is_mobile()) {?>
-    <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"blue","textColor":"red","width":500,"style":{"typography":{"fontSize":"33px"},"border":{"radius":"20px"}}} -->
-        <div class="wp-block-button has-custom-width wp-block-button__width-100 has-custom-font-size"
-             style="font-size:33px; font-weight: bold;">
-            <a href="/demo"
-               class="wp-block-button__link has-white-color has-blue-background-color has-text-color has-background"
-               style="border-radius:20px">Provalo subito</a>
-        </div>
-        <!-- /wp:button --></div>
-    <?php }?>
+    <?php   /*if (!wp_is_mobile()) {*/?>
+    <!-- <div class="wp-block-buttons"> wp:button {"backgroundColor":"blue","textColor":"red","width":500,"style":{"typography":{"fontSize":"33px"},"border":{"radius":"20px"}}} -->
+    <!-- <div class="wp-block-button has-custom-width wp-block-button__width-100 has-custom-font-size"
+		 style="font-size:33px; font-weight: bold;">
+		<a href="/demo"
+		   class="wp-block-button__link has-white-color has-blue-background-color has-text-color has-background"
+		   style="border-radius:20px">Provalo subito</a>
+	</div>
+	</div>-->
+    <?php /*}*/?>
 
 
 	<h2 id="main-nav-label" class="screen-reader-text">
@@ -31,7 +31,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 	<div class="<?php echo esc_attr( $container ); ?>">
-
 
 
 		<!-- Your site title as branding in the menu -->
@@ -52,13 +51,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 			the_custom_logo();
 		}
 		*/?>
-		<!-- end custom logo -->
+		<!-- end custom logo id="navbar-toggler" -->
 
-		<!--<button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                aria-label="<?php /*esc_attr_e( 'Toggle navigation', 'understrap' ); */?>">
+                aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
 			<span class="navbar-toggler-icon"></span>
-		</button>-->
+		</button>
 
 		<!-- The WordPress Menu goes here -->
 		<?php
