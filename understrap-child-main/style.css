@@ -59,7 +59,7 @@ main {
   /*  margin-top: 90px;*/
 }
 
-a {
+div#content a {
     text-decoration: none !important;
     color: #ffffff !important;
 }
@@ -103,7 +103,7 @@ div.div-consegna-vendita-smaltimento {
     /*border-image-slice: solid 1px linear-gradient(90deg, rgba(79,70,229,1) 0%, rgba(255,168,68,1) 33%, rgba(255,3,74,1) 66%, rgba(184,74,235,1) 100%) !important;
 */
 }
-.is-style-fill a:hover {
+.pulsante-vendita-consegna-smaltimento a:hover {
     background-color: #ffffff !important;
 
     border: none !important;
